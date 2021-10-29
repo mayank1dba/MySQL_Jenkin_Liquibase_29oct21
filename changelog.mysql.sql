@@ -1,10 +1,10 @@
 --liquibase formatted sql
 /* https://www.liquibase.org/documentation/sql_format.html */
 
---changeset Mayank:1
+--changeset May:1
 drop table person2;
 
---changeset Mayank_1:2
+--changeset May_1:2
 create table person2 (
     id int primary key,
     name varchar(50) not null,
@@ -13,10 +13,10 @@ create table person2 (
     city varchar(30)
 )
 
---changeset Raj:3
+--changeset Raji:3
 drop table company2
 
---changeset Raj_1:4
+--changeset Raji_1:4
 create table company2 (
     id int primary key,
     name varchar(50) not null,
@@ -25,6 +25,6 @@ create table company2 (
     city varchar(30)
 )
 
---changeset other.dev:4
+--changeset other.devi:4
 alter table person2 add column country varchar(2)
 
